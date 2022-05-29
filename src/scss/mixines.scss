@@ -1,0 +1,21 @@
+@mixin flex{
+  display:flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+@mixin center{
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+@mixin space{
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+@mixin column{
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
