@@ -19,13 +19,17 @@ popup_open.addEventListener("click", function(e){
     if(sessionStorage.count >= 5){
         close_btn.classList.add('active');
     }
-    popup.classList.add('active');
+    popup.classList.toggle('active');
 });
 
 close_btn.addEventListener("click", function(e){
     e.preventDefault();
     popup.classList.remove('active');
 });
+
+popup.addEventListener("click", function () {
+    popup.classList.toggle('active');
+})
 
 popup_close.addEventListener("click", function(){
     popup.classList.remove('active');
